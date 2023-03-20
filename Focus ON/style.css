@@ -3,9 +3,32 @@
 }
 
 body {
-  background-color: rgba(72, 163, 0, 0.07);
+  background-color: var(--primary-color);
   font-family: 'Poppins', sans-serif;
   margin: 0;
+}
+:root{
+
+  --primary-color: rgba(72, 163, 0, 0.07);
+  --secondary-color:#fbfbfb;
+  --subtitle-color:black;
+  --prgress-text:#858585;
+  --placeholder-color:#d9d9d9;
+  --title-color:#48a300;
+  --text-color:rgb(21, 21, 21);
+  --title-span:#61481c;
+
+
+}
+.theme-toggle{
+  --primary-color: rgba(0, 0, 0, 0.89);
+  --secondary-color:#0f0f0f;
+  --subtitle-color:rgb(226, 225, 225);
+  --prgress-text:#393939;
+  --placeholder-color:#272727;
+  --title-color:#73ff00;
+  --text-color:rgb(182, 181, 181);
+  --title-span:#ffa300;
 }
 
 main {
@@ -14,31 +37,37 @@ main {
 
 .title {
   font-size: 64px;
-  color: #48a300;
+  color: var(--title-color);
   text-align: center;
 }
 
 .title span {
-  color: #61481c;
+  color: var(--title-span);
 }
-
+.subtitle{
+  color:var(--subtitle-color)
+}
 .app-container {
-  background-color: #fbfbfb;
+  background-color: var(--secondary-color);
   max-width: 660px;
   margin-inline: auto;
   border-radius: 15px;
   padding: 32px 48px;
   box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-.sun-icon {
+.moon-icon {
   vertical-align: middle;
   margin-left: 16px;
+  position: absolute;
+  right: 120px;
+  cursor: pointer;
 }
 
 .progress-label {
   font-size: 14px;
-  color: #858585;
+  color: var(--prgress-text);
   margin-bottom: 20px;
 }
 
@@ -113,22 +142,24 @@ main {
   align-self: stretch;
   width: 100%;
   font-weight: 500;
+  opacity: 1;
 }
 
 .goal-input::placeholder {
-  color: #d9d9d9;
+  color: var(--placeholder-colors);
 }
 
 .quote {
   font-weight: 500;
   text-align: center;
+  color: var(--text-color);
 }
 
 .made-with {
   font-weight: 500;
   font-size: 10px;
   text-align: center;
-  color: #858585;
+  color:var(--text-color);
   margin-top: 64px;
 }
 

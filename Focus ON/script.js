@@ -3,6 +3,7 @@ const inputFields = document.querySelectorAll('.goal-input')
 const errorLabel = document.querySelector('.error-label')
 const progressBar = document.querySelector('.progress-bar')
 const progressValue = document.querySelector('.progress-value')
+const nightTheme = document.querySelector(".moon-icon")
 
 //object for localStorage
 
@@ -40,4 +41,16 @@ inputFields.forEach((input) => {
     input.addEventListener('focus', () => {
         progressBar.classList.remove('show-error')
     })
+})
+
+
+nightTheme.addEventListener('click',()=>{
+  document.body.classList.toggle("theme-toggle")
+
+  if(document.body.classList.contains("theme-toggle")){
+    nightTheme.src="images/sun.svg"
+  }
+  else{
+    nightTheme.src="images/moon.png"
+  }
 })
