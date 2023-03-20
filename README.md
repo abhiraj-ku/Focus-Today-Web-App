@@ -8,3 +8,5 @@ of him using Our webApp
 
 ![focus UI](https://user-images.githubusercontent.com/113116498/226255692-215b5f4f-5344-4049-a455-79341fcaf130.PNG)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbaf230b-5992-4763-9043-1b7463bf3364/deploy-status)](https://app.netlify.com/sites/focus-today12/deploys)
+
